@@ -6,13 +6,13 @@ const app = express(); // Initialize the express web server
 const logger = require('./logger.js');
 const uniqueFilename = require('unique-filename')
 
-const listenPort = process.env.PORT | 80;
+const listenPort = process.env.PORT || 80;
 const workDir = "data";
 const serveDir = "public";
 const tmpDir = "tmp";
 const fileDir = "f";
 const imgDir = "i";
-const key = process.env.KEY | "key";
+const key = process.env.KEY || "key";
 
 const extImg = ["png", "jpg", "jpeg", "bmp"];
 
